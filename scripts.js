@@ -43,7 +43,7 @@ function sendToWhatsApp(productId, productName, unitPrice) {
 	);
 	const totalPrice = unitPrice * quantity;
 	const message = `¡Hola! Quiero pedir ${quantity} kg de ${productName}. Total: $${totalPrice}.`;
-	const phoneNumber = "1234567890"; // Reemplazar con el número de WhatsApp del negocio
+	const phoneNumber = "+5493456543505"; // Reemplazar con el número de WhatsApp del negocio
 	const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
 		message
 	)}`;
