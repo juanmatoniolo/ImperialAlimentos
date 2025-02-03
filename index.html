@@ -10,16 +10,18 @@
 </head>
 
 <body>
-    <!-- Encabezado -->
     <header class="bg-success text-white text-center py-3">
         <h1>Mascotas Felices</h1>
     </header>
 
-    <!-- Menú de Navegación -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <a class="navbar-brand" href="#">Mascotas Felices</a>
-            <div class="collapse navbar-collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#perros">Comida para Perros</a>
@@ -32,56 +34,108 @@
         </div>
     </nav>
 
-    <!-- Sección de Productos -->
     <section class="container my-4">
-        <!-- Comida para Perros -->
         <h2 id="perros" class="text-center mb-4">Comida para Perros</h2>
         <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="product-card card shadow-sm text-center p-3">
-                    <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/mg/gm/1p/images/product-images/img_large/00750200287246l.jpg" alt="Alimento para perros">
-                    <h3>Premium Dog Food</h3>
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product1" data-name="Barking Adulto" data-price="1500">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Perro-Barking-Adulto.jpeg" alt="Alimento para perros">
+                    <h3>Barking Adulto</h3>
                     <p>Proteína alta, mordida pequeña.</p>
                     <p class="fw-bold">Precio: $1500/kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
-                        <button class="btn btn-danger" onclick="updateQuantity('product1', -1)">-</button>
-                        <span id="quantity-product1" class="mx-3">1</span>
-                        <button class="btn btn-success" onclick="updateQuantity('product1', 1)">+</button>
+                        <button class="btn btn-danger btn-decrement" data-id="product1">-</button>
+                        <span class="mx-3 quantity" id="quantity-product1">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product1">+</button>
                     </div>
-                    <p class="fw-bold" id="total-price-product1">$1500</p>
+                    <p class="fw-bold total-price" id="total-price-product1">$1500</p>
                     <p class="text-success" id="shipping-info-product1"></p>
-                    <button class="btn btn-success w-100 mt-2"
-                        onclick="sendToWhatsApp('product1', 'Premium Dog Food', 1500)">Pedir por WhatsApp</button>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product1">Pedir por
+                        WhatsApp</button>
                 </div>
             </div>
-        </div>
 
-        <!-- Comida para Gatos -->
-        <h2 id="gatos" class="text-center mt-5 mb-4">Comida para Gatos</h2>
-        <div class="row justify-content-center">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-4 mb-4">
-                <div class="product-card card shadow-sm text-center p-3">
-                    <img src="https://th.bing.com/th/id/OIP.zOtNp7iu4qaF6TczMJzHogHaHa?rs=1&pid=ImgDetMain" alt="Alimento para gatos">
-                    <h3>Premium Cat Food</h3>
-                    <p>Alta digestibilidad, sabor irresistible.</p>
-                    <p class="fw-bold">Precio: $1600/kg</p>
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product2" data-name="Danke" data-price="1800">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Perro-Danker-Cachorro.jpeg" alt="Alimento para perros">
+                    <h3>Danke</h3>
+                    <p>Proteína alta, para perros adultos.</p>
+                    <p class="fw-bold">Precio: $1800/kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
-                        <button class="btn btn-danger" onclick="updateQuantity('product6', -1)">-</button>
-                        <span id="quantity-product6" class="mx-3">1</span>
-                        <button class="btn btn-success" onclick="updateQuantity('product6', 1)">+</button>
+                        <button class="btn btn-danger btn-decrement" data-id="product2">-</button>
+                        <span class="mx-3 quantity" id="quantity-product2">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product2">+</button>
                     </div>
-                    <p class="fw-bold" id="total-price-product6">$1600</p>
-                    <p class="text-success" id="shipping-info-product6"></p>
-                    <button class="btn btn-success w-100 mt-2"
-                        onclick="sendToWhatsApp('product6', 'Premium Cat Food', 1600)">Pedir por WhatsApp</button>
+                    <p class="fw-bold total-price" id="total-price-product2">$1800</p>
+                    <p class="text-success" id="shipping-info-product2"></p>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product2">Pedir por
+                        WhatsApp</button>
                 </div>
             </div>
+
+
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product4" data-name="Premium Dog Food" data-price="1400">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Gato-Danke.jpeg" alt="Alimento para perros">
+                    <h3>Premium Dog Food</h3>
+                    <p>Nutrición balanceada para todas las razas.</p>
+                    <p class="fw-bold">Precio: $1400/kg</p>
+                    <div class="quantity-controls d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger btn-decrement" data-id="product4">-</button>
+                        <span class="mx-3 quantity" id="quantity-product4">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product4">+</button>
+                    </div>
+                    <p class="fw-bold total-price" id="total-price-product4">$1400</p>
+                    <p class="text-success" id="shipping-info-product4"></p>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product4">Pedir por
+                        WhatsApp</button>
+                </div>
+            </div>
+
+
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product3" data-name="Premium Dog Food" data-price="1000">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Perro-Danke.jpeg" alt="Alimento para perros">
+                    <h3>Premium Dog Food</h3>
+                    <p>Nutrición balanceada para todas las razas.</p>
+                    <p class="fw-bold">Precio: $1000/kg</p>
+                    <div class="quantity-controls d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger btn-decrement" data-id="product3">-</button>
+                        <span class="mx-3 quantity" id="quantity-product3">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product3">+</button>
+                    </div>
+                    <p class="fw-bold total-price" id="total-price-product3">$1400</p>
+                    <p class="text-success" id="shipping-info-product3"></p>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product3">Pedir por
+                        WhatsApp</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product5" data-name="Premium Dog Food" data-price="1500">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Perro-Danke.jpeg" alt="Alimento para perros">
+                    <h3>Premium Dog Food</h3>
+                    <p>Nutrición balanceada para todas las razas.</p>
+                    <p class="fw-bold">Precio: $1500/kg</p>
+                    <div class="quantity-controls d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger btn-decrement" data-id="product5">-</button>
+                        <span class="mx-3 quantity" id="quantity-product5">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product5">+</button>
+                    </div>
+                    <p class="fw-bold total-price" id="total-price-product5">$1400</p>
+                    <p class="text-success" id="shipping-info-product5"></p>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product5">Pedir por
+                        WhatsApp</button>
+                </div>
+            </div>
+
+
+
         </div>
     </section>
-    <script src="./scripts.js"></script>
 
+
+    <script src="./scripts.js"></script>
 
 </body>
 
