@@ -14,59 +14,40 @@
         <h1>Mascotas Felices</h1>
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Mascotas Felices</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#perros">Comida para Perros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gatos">Comida para Gatos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     <section class="container my-4">
-        <h2 id="perros" class="text-center mb-4">Comida para Perros</h2>
         <div class="row justify-content-center">
-            <div class="col-md-6 col-lg-4 mb-4" data-id="product1" data-name="Barking Adulto" data-price="1500">
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product1" data-name="Barking Adulto" data-price="1750">
                 <div class="card shadow-sm text-center p-3">
                     <img src="./assets/Alimento-Perro-Barking-Adulto.jpeg" alt="Alimento para perros">
-                    <h3>Barking Adulto</h3>
-                    <p>Proteína alta, mordida pequeña.</p>
-                    <p class="fw-bold">Precio: $1500/kg</p>
+                    <h3>Barking Adulto premium</h3>
+                    <p>Precio por bolsa 32500 (20 kilos)</p>
+                    <p class="fw-bold">Precio: $1750/kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
                         <button class="btn btn-danger btn-decrement" data-id="product1">-</button>
                         <span class="mx-3 quantity" id="quantity-product1">1</span>
                         <button class="btn btn-success btn-increment" data-id="product1">+</button>
                     </div>
-                    <p class="fw-bold total-price" id="total-price-product1">$1500</p>
+                    <p class="fw-bold total-price" id="total-price-product1">$1750</p>
                     <p class="text-success" id="shipping-info-product1"></p>
                     <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product1">Pedir por
                         WhatsApp</button>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-4" data-id="product2" data-name="Danke" data-price="1800">
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product2" data-name="Danke" data-price="2100">
                 <div class="card shadow-sm text-center p-3">
-                    <img src="./assets/Alimento-Perro-Danker-Cachorro.jpeg" alt="Alimento para perros">
-                    <h3>Danke</h3>
-                    <p>Proteína alta, para perros adultos.</p>
-                    <p class="fw-bold">Precio: $1800/kg</p>
+                    <img src="./assets/Alimento-perro-Barking-Adultos-Razas-Pequenias.jpeg" alt="Alimento para perros">
+                    <h3>Barking Mordidas pequeñas</h3>
+                    <p>Precio por bolsa 19500 (10 kilos).</p>
+                    <p class="fw-bold">Precio: $2100kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
                         <button class="btn btn-danger btn-decrement" data-id="product2">-</button>
                         <span class="mx-3 quantity" id="quantity-product2">1</span>
                         <button class="btn btn-success btn-increment" data-id="product2">+</button>
                     </div>
-                    <p class="fw-bold total-price" id="total-price-product2">$1800</p>
+                    <p class="fw-bold total-price" id="total-price-product2">$2100</p>
                     <p class="text-success" id="shipping-info-product2"></p>
                     <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product2">Pedir por
                         WhatsApp</button>
@@ -74,18 +55,18 @@
             </div>
 
 
-            <div class="col-md-6 col-lg-4 mb-4" data-id="product4" data-name="Premium Dog Food" data-price="1400">
+            <div class="col-md-6 col-lg-4 mb-4" data-id="product4" data-name="Premium Dog Food" data-price="2000">
                 <div class="card shadow-sm text-center p-3">
                     <img src="./assets/Alimento-Gato-Danke.jpeg" alt="Alimento para perros">
-                    <h3>Premium Dog Food</h3>
-                    <p>Nutrición balanceada para todas las razas.</p>
-                    <p class="fw-bold">Precio: $1400/kg</p>
+                    <h3>Danke Gato</h3>
+                    <p>Precio por bolsa 19300 (10 kilos)</p>
+                    <p class="fw-bold">Precio: $2000/kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
                         <button class="btn btn-danger btn-decrement" data-id="product4">-</button>
                         <span class="mx-3 quantity" id="quantity-product4">1</span>
                         <button class="btn btn-success btn-increment" data-id="product4">+</button>
                     </div>
-                    <p class="fw-bold total-price" id="total-price-product4">$1400</p>
+                    <p class="fw-bold total-price" id="total-price-product4">$2000</p>
                     <p class="text-success" id="shipping-info-product4"></p>
                     <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product4">Pedir por
                         WhatsApp</button>
@@ -96,7 +77,27 @@
             <div class="col-md-6 col-lg-4 mb-4" data-id="product3" data-name="Premium Dog Food" data-price="1000">
                 <div class="card shadow-sm text-center p-3">
                     <img src="./assets/Alimento-Perro-Danke.jpeg" alt="Alimento para perros">
-                    <h3>Premium Dog Food</h3>
+                    <h3>Danke perro adultos </h3>
+                    <p>Precio por bolsa 14500 (15kilos)</p>
+                    <p class="fw-bold">Precio: $1000/kg</p>
+                    <div class="quantity-controls d-flex justify-content-center align-items-center">
+                        <button class="btn btn-danger btn-decrement" data-id="product3">-</button>
+                        <span class="mx-3 quantity" id="quantity-product3">1</span>
+                        <button class="btn btn-success btn-increment" data-id="product3">+</button>
+                    </div>
+                    <p class="fw-bold total-price" id="total-price-product3">$1000</p>
+                    <p class="text-success" id="shipping-info-product3"></p>
+                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product3">Pedir por
+                        WhatsApp</button>
+                </div>
+            </div>
+
+            <!-- Anexar mas alimentos
+            
+      <div class="col-md-6 col-lg-4 mb-4" data-id="product3" data-name="Premium Dog Food" data-price="1000">
+                <div class="card shadow-sm text-center p-3">
+                    <img src="./assets/Alimento-Perro-Danke.jpeg" alt="Alimento para perros" >
+                    <h3>Danke perro adultos </h3>
                     <p>Nutrición balanceada para todas las razas.</p>
                     <p class="fw-bold">Precio: $1000/kg</p>
                     <div class="quantity-controls d-flex justify-content-center align-items-center">
@@ -104,92 +105,73 @@
                         <span class="mx-3 quantity" id="quantity-product3">1</span>
                         <button class="btn btn-success btn-increment" data-id="product3">+</button>
                     </div>
-                    <p class="fw-bold total-price" id="total-price-product3">$1400</p>
+                    <p class="fw-bold total-price" id="total-price-product3">$2000</p>
                     <p class="text-success" id="shipping-info-product3"></p>
                     <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product3">Pedir por
                         WhatsApp</button>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 mb-4" data-id="product5" data-name="Premium Dog Food" data-price="1500">
-                <div class="card shadow-sm text-center p-3">
-                    <img src="./assets/Alimento-Perro-Danke.jpeg" alt="Alimento para perros">
-                    <h3>Premium Dog Food</h3>
-                    <p>Nutrición balanceada para todas las razas.</p>
-                    <p class="fw-bold">Precio: $1500/kg</p>
-                    <div class="quantity-controls d-flex justify-content-center align-items-center">
-                        <button class="btn btn-danger btn-decrement" data-id="product5">-</button>
-                        <span class="mx-3 quantity" id="quantity-product5">1</span>
-                        <button class="btn btn-success btn-increment" data-id="product5">+</button>
-                    </div>
-                    <p class="fw-bold total-price" id="total-price-product5">$1400</p>
-                    <p class="text-success" id="shipping-info-product5"></p>
-                    <button class="btn btn-success w-100 mt-2 btn-whatsapp" data-id="product5">Pedir por
-                        WhatsApp</button>
-                </div>
-            </div>
-
-
-
+-->
         </div>
     </section>
 
 
-    <script src="./scripts.js">
+    <script>
         // Almacenamos el precio por kg de cada producto
-const productPrices = {
-	product1: 1500,
-	product2: 1800,
-	product3: 1600,
-	product4: 1500,
-	product5: 2000
-};
+        const productPrices = {
+            product1: 1750,
+            product2: 2100,
+            product3: 1000,
+            product4: 2000,
+            /* product5: 1500 */
+        };
 
-// Función para actualizar la cantidad
-function updateQuantity(productId, change) {
-	const quantityElement = document.getElementById(`quantity-${productId}`);
-	let quantity = parseInt(quantityElement.innerText);
-	quantity += change;
-	if (quantity < 1) quantity = 1;
-	quantityElement.innerText = quantity;
-	updateTotalPrice(productId, quantity);
-}
+        // Función para actualizar la cantidad
+        function updateQuantity(productId, change) {
+            const quantityElement = document.getElementById(`quantity-${productId}`);
+            let quantity = parseInt(quantityElement.innerText);
+            quantity += change;
+            if (quantity < 1) quantity = 1;
+            quantityElement.innerText = quantity;
+            updateTotalPrice(productId, quantity);
+        }
 
-// Función para actualizar el precio total
-function updateTotalPrice(productId, quantity) {
-	const priceElement = document.getElementById(`total-price-${productId}`);
-	const unitPrice = productPrices[productId];
-	const totalPrice = unitPrice * quantity;
-	priceElement.innerText = `$${totalPrice.toFixed(2)}`;
+        // Función para actualizar el precio total
+        function updateTotalPrice(productId, quantity) {
+            const priceElement = document.getElementById(`total-price-${productId}`);
+            const unitPrice = productPrices[productId];
+            const totalPrice = unitPrice * quantity;
+            priceElement.innerText = `$${totalPrice.toFixed(2)}`;
 
-	const shippingInfoElement = document.getElementById(`shipping-info-${productId}`);
-	shippingInfoElement.innerText = quantity >= 3 ? "¡Envío gratis a tu domicilio!" : "";
-}
+            const shippingInfoElement = document.getElementById(`shipping-info-${productId}`);
+            shippingInfoElement.innerText = quantity >= 3 ? "¡Envío gratis a tu domicilio!" : "";
+        }
 
-// Función para enviar pedido a WhatsApp
-function sendToWhatsApp(productId) {
-	const quantity = document.getElementById(`quantity-${productId}`).innerText;
-	const unitPrice = productPrices[productId];
-	const totalPrice = unitPrice * quantity;
-	const productName = document.querySelector(`[data-id="${productId}"] h3`).innerText;
-	const message = `Hola, quiero comprar ${quantity}kg de ${productName}. Total: $${totalPrice}`;
-	const phone = "5491122334455"; // Número de WhatsApp de la tienda
-	const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-	window.open(url, "_blank");
-}
+        // Función para enviar pedido a WhatsApp
+        function sendToWhatsApp(productId) {
+            const quantity = document.getElementById(`quantity-${productId}`).innerText;
+            const unitPrice = productPrices[productId];
+            const totalPrice = unitPrice * quantity;
+            const productName = document.querySelector(`[data-id="${productId}"] h3`).innerText;
+            const message = `Hola, quiero comprar ${quantity}kg de ${productName}. Total: $${totalPrice}`;
+            const phone = "5491122334455"; // Número de WhatsApp de la tienda
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, "_blank");
+        }
 
-// Agregar eventos a los botones
-document.querySelectorAll(".btn-increment").forEach(button => {
-	button.addEventListener("click", () => updateQuantity(button.getAttribute("data-id"), 1));
-});
+        // Agregar eventos a los botones
+        document.querySelectorAll(".btn-increment").forEach(button => {
+            button.addEventListener("click", () => updateQuantity(button.getAttribute("data-id"), 1));
+        });
 
-document.querySelectorAll(".btn-decrement").forEach(button => {
-	button.addEventListener("click", () => updateQuantity(button.getAttribute("data-id"), -1));
-});
+        document.querySelectorAll(".btn-decrement").forEach(button => {
+            button.addEventListener("click", () => updateQuantity(button.getAttribute("data-id"), -1));
+        });
 
-document.querySelectorAll(".btn-whatsapp").forEach(button => {
-	button.addEventListener("click", () => sendToWhatsApp(button.getAttribute("data-id")));
-});
+        document.querySelectorAll(".btn-whatsapp").forEach(button => {
+            button.addEventListener("click", () => sendToWhatsApp(button.getAttribute("data-id")));
+        });
 
     </script>
 
