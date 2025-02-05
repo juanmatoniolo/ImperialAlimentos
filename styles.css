@@ -1,29 +1,77 @@
+/* General */
 body {
-    background-color: #f8f9fa;
+    background-color: #F8F9FA;
+    font-family: Arial, sans-serif;
 }
 
-.product-card {
+/* Header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Cards */
+.card {
+    background-color: white;
     border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
 }
 
-.product-card:hover {
-    transform: scale(1.03);
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.product-card img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
+/* Botones */
+.btn-success {
+    background-color: #388E3C;
+    border: none;
 }
 
-.quantity-controls button {
-    width: 4.5em;
-    height: 2.3em;
+.btn-success:hover {
+    background-color: #2E7D32;
 }
 
-img {
-    height: 20em !important;
-    object-fit: contain;
+.btn-danger {
+    background-color: #E53935;
+    border: none;
+}
+
+.btn-danger:hover {
+    background-color: #C62828;
+}
+
+/* Texto */
+h3 {
+    color: #333;
+}
+
+.fw-bold {
+    color: #444;
+}
+
+.text-success {
+    color: #388E3C !important;
+}
+
+/* Ajuste de cantidades */
+.quantity-controls {
+    margin-top: 10px;
+}
+
+.quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card > h3 {
+    height: 2.5em;
+}
+
+.card > h3 {
+    height: 2.5em;
+}
+.p-precio{
+    height: 2em;
 }
